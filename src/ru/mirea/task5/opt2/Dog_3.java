@@ -1,4 +1,4 @@
-package ru.mirea.task5.lab3;
+package ru.mirea.task5.opt2;
 
 public abstract class Dog_3 {
     private String name;
