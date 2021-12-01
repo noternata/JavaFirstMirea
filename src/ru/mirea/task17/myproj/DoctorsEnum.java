@@ -20,6 +20,7 @@ enum Doctors {
     int getPrice() {
         return price;
     }
+
 }
 
 public class DoctorsEnum {
@@ -52,7 +53,7 @@ public class DoctorsEnum {
 
         // вывести значение перечислимого типа
         System.out.println("Выбранный Вами врач: " + doc);
-        System.out.println();
+        //System.out.println();
 
         //doc = Doctors.Cardiolog;
 
@@ -60,6 +61,8 @@ public class DoctorsEnum {
         //if (doc == Doctors.Cardiolog) System.out.println("Переменная ар содержит Cardiolog.\n");
 
         // применить перечисление для управления оператором switch
+        System.out.println("Прием будет стоить: "+ doc.getPrice());
+        /*
         switch (doc) {
             case Cardiolog:
                 System.out.println("Прием будет стоить: "+ doc.getPrice());
@@ -76,6 +79,6 @@ public class DoctorsEnum {
             case LOR:
                 System.out.println("Прием будет стоить: "+ doc.getPrice());
                 break;
-        }
+        }*/
     }
 }
