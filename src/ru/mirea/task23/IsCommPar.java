@@ -32,7 +32,7 @@ public class IsCommPar {
     public static void main(String[] args) {
 
         DNA Person1 = new DNA("Smirnova", 196453573, 390390487);
-        DNA Person2 = new DNA("Smirnov", 196453573, 390390487);
+        DNA Person2 = new DNA("Smirnov", 196473573, 390390487);
 
         System.out.println("Эти люди связаны родственной связью брат-сестра или наоборот?");
         System.out.println(Person1.equals(Person2));
