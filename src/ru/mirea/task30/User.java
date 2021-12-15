@@ -3,6 +3,7 @@ import java.util.*;
 
 public class User {
     private int id;
+    private String police;
     private Position position;
     private String name;
     private int age;
@@ -32,8 +33,9 @@ public class User {
         }
         return false;
     }
-    public User(Position position, String name, int age, Gender gender) {
+    public User(/*String police,*/Position position, String name, int age, Gender gender) {
         if (name != null && !name.isEmpty() && age > 0 && gender != null && position!=null){
+            //this.police =police;
             this.position = position;
             this.name = name;
             this.age = age;
@@ -110,12 +112,12 @@ public class User {
     public static int getAverageAgeOfAllUsers(Gender gender){
         return getAllAgeUsers(gender) / getHowManyUsers(gender);
     }
-    /*public static void main(String[] args) {
-        new User("Евгений", 35, Sex.MALE);
-        new User("Марина", 34, Sex.FEMALE);
-        new User("Алина", 7, Sex.FEMALE);
+    public static void main(String[] args) {
+        new User(Position.PATIENT,"Евгений", 35, Gender.MALE);
+        new User(Position.PATIENT,"Марина", 34, Gender.FEMALE);
+        new User(Position.PATIENT,"Алина", 7, Gender.FEMALE);
 
-
+/*
         System.out.println("Все пользователи:");
         User.getAllUsers().forEach(System.out::println);
         System.out.println("Все пользователи: MALE");
@@ -135,5 +137,7 @@ public class User {
         System.out.println("  средний возраст всех пользователей MALE: " + User.getAverageAgeOfAllUsers(Sex.MALE));
         System.out.println("средний возраст всех пользователей FEMALE: " + User.getAverageAgeOfAllUsers(Sex.FEMALE));
         System.out.println("================================================");
-    }/*/
+
+ */
+    }
 }
