@@ -1,6 +1,6 @@
 package ru.mirea.task22;
 
-
+/*
 //С помощью фабрики будут создаваться прививки в дальнейшем доступные для выбора пользователю
 class Vaccine{
     public void orderVac() {
@@ -18,9 +18,8 @@ enum VaccineType {
     COVID19,
     TUBERCULES,
     MEASLES
-}
+}/*
 class VacFactory {
-
     public Vaccine createVac(VaccineType type) {
         Vaccine vaccine = null;
 
@@ -37,7 +36,7 @@ class VacFactory {
             case MEASLES:
                 vaccine = new measles();
                 break;
-        }
+
     }
 }
 public class VaccineFab {
@@ -47,7 +46,7 @@ public class VaccineFab {
         this.vacFactory = vacFactory;
     }
 
-    public Vaccine orderCoffee(VaccineType type) {
+    public Vaccine createVac(VaccineType type) {
         Vaccine vaccine = vacFactory.createVac(type);
 
         vaccine.orderVac();
@@ -58,3 +57,4 @@ public class VaccineFab {
         return vaccine;
     }
 }
+*/

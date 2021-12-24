@@ -12,7 +12,7 @@ class GeneralBloodA implements Service {
         this.price = price;
     }
     public int getPrice() {return this.price;}
-    public String getType() {return this.type;    }
+    public String getType() {return this.type;}
 }
 class BloodChememistry implements Service {
     private String type;

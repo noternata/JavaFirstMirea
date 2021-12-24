@@ -20,7 +20,7 @@ public class DoctorExeption {
         System.out.println("Bыберите врача, которого хотите посетить:" + "\n" + "1. Кардиолог"+ "\n" +"2. Офтальмолог"+ "\n" +
                 "3. Терапевт"+ "\n" +"4. Рентген"+ "\n" +"5. ЛОР");
         int n = sc.nextInt();
-        System.out.println("Check your GPA: ");
+        System.out.println("Проверьте запись ");
 
         try {
             Check.checkGPA(n);
